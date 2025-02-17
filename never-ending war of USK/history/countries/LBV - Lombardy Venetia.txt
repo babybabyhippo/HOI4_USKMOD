@@ -1,0 +1,235 @@
+capital = 608
+
+oob = "LBV_1936"
+set_naval_oob = "LBV_1936_naval"
+set_air_oob = "LBV_1936_air"
+
+set_technology = {
+	aa_lmg = 1
+	aa_cannon_1 = 1
+	engines_1 = 1
+	engines_2 = 1
+	early_bombs = 1
+	aircraft_construction = 1
+	iw_small_airframe = 1
+	iw_medium_airframe = 1
+	iw_large_airframe = 1
+	air_torpedoe_1 = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	basic_heavy_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
+	basic_naval_mines = 1
+	submarine_mine_laying = 1
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	early_ship_hull_cruiser = 1
+	early_ship_hull_carrier = 1
+	basic_battery = 1
+	basic_heavy_battery = 1
+	basic_light_battery = 1
+	basic_medium_battery = 1
+	basic_torpedo = 1
+	basic_depth_charges = 1
+	basic_heavy_armor_scheme = 1
+	basic_cruiser_armor_scheme = 1
+	mtg_transport = 1
+	basic_dp_light_battery = 1
+	cruiser_submarines = 1
+	aa_lmg = 1
+	aa_cannon_1 = 1
+	engines_1 = 1
+	engines_2 = 1
+	early_bombs = 1
+	aircraft_construction = 1
+	iw_small_airframe = 1
+	basic_small_airframe = 1
+	iw_medium_airframe = 1
+	basic_medium_airframe = 1
+	iw_large_airframe = 1
+	air_torpedoe_1 = 1
+}
+
+set_convoys = 70
+set_stability = 0.3
+set_war_support = 0.3
+
+add_ideas = {
+	limited_exports
+	early_economic_mobilisation
+	LBV_alone
+	LBV_not_ready
+	LBV_too_much_br
+	LBV_not_effective
+	LBV_doubt
+	LBV_popular_front_1
+}
+
+set_party_name = { ideology =  neutrality long_name = LBV_anarchist_party_long name = LBV_anarchist_party }
+set_party_name = { ideology =  communism long_name = LBV_communism_party_long name = LBV_communism_party }
+set_party_name = { ideology =  fascism long_name = LBV_fascism_party_long name = LBV_fascism_party }
+set_party_name = { ideology =  democratic long_name = LBV_democratic_party_long name = LBV_democratic_party }
+
+set_politics = {
+	ruling_party =  neutrality
+	ideology = anarchism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 17
+	fascism = 15
+	communism = 1
+	neutrality = 67
+}
+recruit_character = LBV_skh
+recruit_character = LBV_lsj
+recruit_character = LBV_ghy
+recruit_character = LBV_lys
+recruit_character = LBV_smj
+recruit_character = LBV_kjs
+recruit_character = LBV_htj
+recruit_character = LBV_lcm
+recruit_character = LBV_syu
+recruit_character = LBV_ndu
+recruit_character = LBV_shj
+
+
+
+
+
+
+
+
+
+
+
+
+
+	create_equipment_variant = {
+		name = "A-17" #
+		type = small_plane_cas_airframe_1
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_USA_CAS1_medium"
+	}
+
+	create_equipment_variant = {
+		name = "Jianwei Class"			
+		type = ship_hull_light_1
+		name_group = CHI_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Haiqi Class"
+		type = ship_hull_cruiser_coastal_defense_ship
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = empty
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Ninghai Class"
+		type = ship_hull_cruiser_1
+		name_group = CHI_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Type VII"
+		type = ship_hull_submarine_2
+		name_group = GER_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_2
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Bf 109 D"
+		type = small_plane_airframe_1
+		design_team = mio:GER_messerschmitt_organization
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_GER_fighter1_medium"
+	}
+	create_equipment_variant = {
+		name = "Hs 123"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Do 22"
+		type = small_plane_naval_bomber_airframe_1
+		design_team = mio:GER_dornier_organization
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = lmg_defense_turret
+			special_type_slot_2 = floats
+		}
+		icon = "GFX_GER_naval_bomber1_medium"
+	}

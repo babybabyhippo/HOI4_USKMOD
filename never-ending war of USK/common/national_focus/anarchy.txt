@@ -1,0 +1,1283 @@
+focus_tree = {
+	id = anarchy_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = LBV
+		}
+	}
+
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1350 }
+
+
+	#심강현파#
+	
+	focus = {
+		id = LBV_skh_party
+		icon = GFX_focus_COG_intore_lion_dancers
+		mutually_exclusive = { focus = LBV_lsj_party }
+		x = 1
+		y = 0
+
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.05
+		}
+	}
+	
+	#인민전선 루트#
+	focus = {
+		id = LBV_popular_front_political_power
+		icon = GFX_goal_generic_national_unity
+		x = 4
+		y = 1
+		Relative_position_id = LBV_skh_party
+		prerequisite = { focus = LBV_skh_party }
+
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = LBV_mir_money
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 1
+		y = 1
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_popular_front_political_power }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = LBV_steal days = 365 }
+		}
+	}
+	focus = {
+		id = LBV_popular_front_reform
+		icon = GFX_focus_por_workers_of_iberia
+		x = -1
+		y = 1
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_popular_front_political_power }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = LBV_popular_front_1
+				add_idea = LBV_popular_front_2
+			}
+		}
+	}
+	focus = {
+		id = LBV_belief
+		icon = GFX_goal_generic_improve_relations
+		x = 0
+		y = 2
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_popular_front_reform  }
+		prerequisite = { focus = LBV_mir_money }
+
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = LBV_doubt
+		}
+	}
+	focus = {
+		id = LBV_give_money
+		icon = GFX_focus_generic_agricultural_subsidies
+		x = 2
+		y = 2
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_mir_money }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.15
+			add_timed_idea = { idea = LBV_giving days = 1095 }
+		}
+	}
+	focus = {
+		id = LBV_neutrality_improve
+		icon = GFX_focus_NOR_empower_sivorg
+		x = -2
+		y = 2
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_popular_front_reform }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_popularity = {
+			    ideology = neutrality
+			    popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = LBV_rearmament
+		icon = GFX_focus_generic_little_entente
+		x = -1
+		y = 3
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_neutrality_improve }
+		prerequisite = { focus = LBV_belief }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = war_economy
+			add_war_support = 0.15
+		}
+	}
+	focus = {
+		id = LBV_again
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		x = -1
+		y = 4
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_rearmament }
+
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+
+		}
+
+		bypass = {
+		
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			declare_war_on = {
+				target = EGY
+				type = take_state_focus
+			}
+			declare_war_on = {
+				target = VOL
+				type = take_state_focus
+			}
+			declare_war_on = {
+				target = RCG
+				type = take_state_focus
+			}
+			hidden_effect = {
+				country_event = { id = LBV.2 days = 1 }
+				EGY = { 
+					country_event = { id = EGY.2 days = 1 }
+				}
+			}
+		}
+	}
+	focus = {
+		id = LBV_a_great_offensive
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = -2
+		y = 5
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_again }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = LBV_great_offensive days = 240 }
+		}
+	}
+	focus = {
+		id = LBV_defence
+		icon = GFX_goal_generic_fortify_city
+		x = 0
+		y = 5
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_again }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			surrender_progress > 0.3
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = LBV_defence
+			608 = {
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 9843
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 11761
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					province = 10068
+				}
+			}
+		}
+	}
+	focus = {
+		id = LBV_resource_protect
+		icon = GFX_goal_generic_trade
+		x = 1
+		y = 3
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_belief }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = closed_economy
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = LBV_secret_base
+		icon = GFX_focus_ARG_defense_and_democracy
+		x = 0
+		y = 6
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_defence }
+
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			surrender_progress > 0.8
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_war_support = 0.5
+			country_event = { id = LBV.3 days = 1 }
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#심강현 독재정 루트#
+	
+	focus = {
+		id = LBV_be_dictator
+		icon = GFX_goal_support_fascism
+		x = -4
+		y = 1
+		Relative_position_id = LBV_skh_party
+		prerequisite = { focus = LBV_skh_party }
+		mutually_exclusive = { focus = LBV_popular_front_political_power }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 120
+			country_event = { id = LBV.4 days = 1 }
+		}
+	}
+	focus = {
+		id = LBV_kill_lsj
+		icon = GFX_focus_SOV_military_purge
+		x = -1
+		y = 1
+		Relative_position_id = LBV_be_dictator
+		prerequisite = { focus = LBV_be_dictator }
+		
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { id = LBV.5 days = 1 }
+		}
+	}
+	focus = {
+		id = LBV_soldier
+		icon = GFX_SOV_liberate_ryutin_ccp_2d_sov_compatibility
+		x = 1
+		y = 1
+		Relative_position_id = LBV_be_dictator
+		prerequisite = { focus = LBV_be_dictator }
+		
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = service_by_requirement
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = LBV_propaganda
+		icon = GFX_goal_generic_propaganda
+		x = -1
+		y = 2
+		Relative_position_id = LBV_be_dictator
+		prerequisite = { focus = LBV_kill_lsj }
+		
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = LBV_doubt
+			add_popularity = { 
+				ideology = fascism
+				popularity = 0.2
+			}
+		}
+	}
+	focus = {
+		id = LBV_inforce
+		icon = GFX_focus_generic_mining_industry
+		x = 1
+		y = 2
+		Relative_position_id = LBV_be_dictator
+		prerequisite = { focus = LBV_soldier }
+		
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.05
+			add_timed_idea = { idea = LBV_inforced_work days = 365 }
+			
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#이서진파#
+	focus = {
+		id = LBV_lsj_party
+		icon = GFX_focus_COG_recognize_the_kimbanguist_church
+		mutually_exclusive = { focus = LBV_skh_party }
+		Relative_position_id = LBV_skh_party
+		x = -14
+		y = 0
+
+		cost = 2
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#김민건파#
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#경제
+
+	focus = {
+		id = LBV_anarchy_slot
+		icon = GFX_goal_generic_construction2
+		x = 15
+		y = 0
+		Relative_position_id = LBV_skh_party
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 608
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			608 = {
+				add_extra_state_shared_building_slots = 10
+			}
+		}
+	}
+	focus = {
+		id = LBV_more_scientist
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 1
+		Relative_position_id = LBV_anarchy_slot
+		prerequisite = { focus = LBV_anarchy_slot }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = LBV_north
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -2
+		y = 1
+		Relative_position_id = LBV_anarchy_slot
+		prerequisite = { focus = LBV_anarchy_slot }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 715
+			owns_state = 328
+			owns_state = 716
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			715 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			328 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			716 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LBV_north_1
+		icon = GFX_goal_continuous_non_factory_construct
+		x = -3
+		y = 2
+		Relative_position_id = LBV_anarchy_slot
+		prerequisite = { focus = LBV_north }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 328
+			owns_state = 714
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			328 = {
+				add_resource = {
+					type = aluminium
+					amount = 10
+				}
+				add_resource = {
+					type = oil
+					amount = 16
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			714 = {
+				add_resource = {
+					type = Chrom
+					amount = 15
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	focus = {
+		id = LBV_north_2
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -1
+		y = 2
+		Relative_position_id = LBV_anarchy_slot
+		prerequisite = { focus = LBV_north }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 610
+			owns_state = 611
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			610 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			611 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	focus = {
+		id = LBV_south
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 2
+		y = 1
+		Relative_position_id = LBV_anarchy_slot
+		prerequisite = { focus = LBV_anarchy_slot }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 597
+			owns_state = 614
+			owns_state = 598
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			597 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			614 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			598 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = LBV_south_1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 1
+		y = 2
+		Relative_position_id = LBV_anarchy_slot
+		prerequisite = { focus = LBV_south }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 597
+			owns_state = 598
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			597 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			598 = {
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	focus = {
+		id = LBV_south_2
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 3
+		y = 2
+		Relative_position_id = LBV_anarchy_slot
+		prerequisite = { focus = LBV_south }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 606
+			owns_state = 607
+			owns_state = 614
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			614 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			607 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			606 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	# 군사#
+	focus = {
+		id = LBV_ministry_of_defence
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 25
+		y = 0
+		Relative_position_id = LBV_skh_party
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = LBV_ministry_of_defence
+		}
+	}
+	focus = {
+		id = LBV_army
+		icon = GFX_goal_generic_army_doctrines
+		x = -3
+		y = 1
+		Relative_position_id = LBV_ministry_of_defence
+		prerequisite = { focus = LBV_ministry_of_defence }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	focus = {
+		id = LBV_army_reform
+		icon = GFX_focus_NORDIC_dem_army
+		x = -3
+		y = 3
+		Relative_position_id = LBV_ministry_of_defence
+		prerequisite = { focus = LBV_army }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = LBV_too_much_br }
+				swap_ideas = {
+					remove_idea = LBV_too_much_br
+					add_idea = LBV_too_much_br_1
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = LBV_too_much_br_2
+					add_idea = LBV_too_much_br_3
+				}
+			}
+		}
+	}
+	focus = {
+		id = LBV_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 0
+		y = 1
+		Relative_position_id = LBV_ministry_of_defence
+		prerequisite = { focus = LBV_ministry_of_defence }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	focus = {
+		id = LBV_navy_port_anarchy
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x = 0
+		y = 3
+		Relative_position_id = LBV_ministry_of_defence
+		prerequisite = { focus = LBV_navy }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			owns_state = 743
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_victory_points = {
+				province = 10000
+				value = 5
+			}
+			743 = {
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 3
+					instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+	focus = {
+		id = LBV_air
+		icon = GFX_goal_generic_air_doctrine
+		x = 3
+		y = 1
+		Relative_position_id = LBV_ministry_of_defence
+		prerequisite = { focus = LBV_ministry_of_defence }
+		
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+	focus = {
+		id = LBV_air_reform
+		icon = GFX_focus_SMB_purchase_aircraft
+		x = 3
+		y = 3
+		Relative_position_id = LBV_ministry_of_defence
+		prerequisite = { focus = LBV_air }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = LBV_too_much_br }
+				swap_ideas = {
+					remove_idea = LBV_too_much_br
+					add_idea = LBV_too_much_br_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = LBV_too_much_br_1
+					add_idea = LBV_too_much_br_3
+				}
+			}
+		}
+	}
+	focus = {
+		id = LBV_reform
+		icon = GFX_focus_NORDIC_com_selector_army
+		x = 0
+		y = 5
+		Relative_position_id = LBV_ministry_of_defence
+		prerequisite = { focus = LBV_air_reform }
+		prerequisite = { focus = LBV_army_reform }
+		
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war = yes
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = LBV_too_much_br }
+				remove_ideas = LBV_too_much_br
+			}
+			if = {
+				limit = { has_idea = LBV_too_much_br_1 }
+				remove_ideas = LBV_too_much_br_1
+			}
+			if = {
+				limit = { has_idea = LBV_too_much_br_2 }
+				remove_ideas = LBV_too_much_br_2
+			}
+			if = {
+				limit = { has_idea = LBV_too_much_br_3 }
+				remove_ideas = LBV_too_much_br_3
+			}
+		}
+	}
+}

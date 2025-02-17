@@ -1,0 +1,330 @@
+characters={
+
+	LBV_skh={
+		name=LBV_skh
+		portraits={
+			army={
+				large="gfx/leaders/LBV/portrait_LBV_skh.dds"
+				small="gfx/interface/ideas/LBV/idea_LBV_skh.dds"
+			}
+		}
+		country_leader={
+			ideology=anarchism
+			traits={ father_of_the_anarchy }
+			expire = "1965.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = skh
+			allowed = {
+				original_tag = LBV
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				old_tiger
+			}
+		}
+		field_marshal={
+			traits={ war_hero infantry_officer army_chief_old_guard }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	LBV_lsj={
+		name=LBV_lsj
+		portraits={
+			army={
+				large="gfx/leaders/LBV/portrait_LBV_lsj.dds"
+				small="gfx/interface/ideas/LBV/idea_LBV_lsj.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = lsj
+			allowed = {
+				original_tag = LBV
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				the_second_of_revolution
+			}
+		}
+	}
+	LBV_ghy={
+		name=LBV_ghy
+		portraits={
+			army={
+				large="gfx/leaders/LBV/portrait_LBV_ghy.dds"
+				small="gfx/interface/ideas/LBV/idea_LBV_ghy.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ghy
+			allowed = {
+				original_tag = LBV
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				landowner
+			}
+		}
+	}
+	LBV_lys={
+		portraits={
+			army={
+				large="gfx/leaders/LBV/portrait_LBV_lys.dds"
+				small="gfx/interface/ideas/LBV/idea_LBV_lys.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = lys
+			allowed = {
+				original_tag = LBV
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				minister_of_finance_deressa
+			}
+		}
+	}
+	LBV_smj={
+		name=LBV_smj
+		portraits={
+			army={
+				large="gfx/leaders/LBV/portrait_LBV_smj.dds"
+				small="gfx/interface/ideas/LBV/idea_LBV_smj.dds"
+			}
+		}
+		advisor = {	
+			slot = air_chief
+			idea_token = smj
+			allowed = {
+				original_tag = LBV
+			}
+			traits = {
+				air_chief_ground_support_3
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+				traits={ career_officer engineer_officer }
+				skill=3
+				attack_skill=4
+				defense_skill=4
+				planning_skill=2
+				logistics_skill=3
+				legacy_id=0
+		}
+	}
+	LBV_kjs={
+		name=LBV_kjs
+		portraits={
+			army={
+				large="gfx/leaders/LBV/portrait_LBV_kjs.dds"
+				small="gfx/interface/ideas/LBV/idea_LBV_kjs.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = kjs
+			allowed = {
+				original_tag = LBV
+			}
+			traits = {
+				army_chief_offensive_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+				traits={ trait_reckless }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=1
+				logistics_skill=3
+				legacy_id=0
+		}
+	}
+	LBV_htj={
+		name=LBV_htj
+		portraits={
+			army={
+				large="gfx/leaders/LBV/portrait_LBV_htj.dds"
+				small="gfx/interface/ideas/LBV/idea_LBV_htj.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = htj
+			allowed = {
+				original_tag = LBV
+			}
+			traits = {
+				army_logistics_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+				traits={ armor_officer brilliant_strategist }
+				skill=3
+				attack_skill=3
+				defense_skill=5
+				planning_skill=4
+				logistics_skill=5
+				legacy_id=0
+		}
+	}
+	LBV_lcm={
+		name=LBV_lcm
+		portraits={
+			army={
+				large="gfx/leaders/LBV/portrait_LBV_lcm.dds"
+				small="gfx/interface/ideas/LBV/idea_LBV_lcm.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = lcm
+			allowed = {
+				original_tag = LBV
+			}
+			traits = {
+				navy_chief_maneuver_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader={		
+			traits={ bold navy_career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=4
+			legacy_id=-1	
+		}	
+	}
+	LBV_syu={
+		name=LBV_syu
+		portraits={
+			army={
+				large="gfx/leaders/LBV/portrait_LBV_syu.dds"
+				small="gfx/interface/ideas/LBV/idea_LBV_syu.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = syu
+			allowed = {
+				original_tag = LBV
+			}
+			traits = {
+				army_armored_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+				traits={ career_officer trait_cautious politically_connected }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=3
+				logistics_skill=2
+				legacy_id=0
+		}
+	}
+	LBV_ndu={
+		name=LBV_ndu
+		portraits={
+			army={
+				large="gfx/leaders/LBV/portrait_LBV_ndu.dds"
+				small="gfx/interface/ideas/LBV/idea_LBV_ndu.dds"
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = ndu
+			allowed = {
+				original_tag = LBV
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		field_marshal={
+				traits={ war_hero trait_cautious commando }
+				skill=4
+				attack_skill=5
+				defense_skill=3
+				planning_skill=5
+				logistics_skill=3
+				legacy_id=0
+		}
+	}
+	LBV_shj={
+		name=LBV_shj
+		portraits={
+			army={
+				large="gfx/leaders/LBV/portrait_LBV_shj.dds"
+				small="gfx/interface/ideas/LBV/idea_LBV_shj.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = shj
+			allowed = {
+				original_tag = LBV
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+				traits={ career_officer trait_cautious politically_connected }
+				skill=4
+				attack_skill=5
+				defense_skill=3
+				planning_skill=4
+				logistics_skill=4
+				legacy_id=0
+		}
+	}
+}

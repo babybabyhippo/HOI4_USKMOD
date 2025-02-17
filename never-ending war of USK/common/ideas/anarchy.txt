@@ -1,0 +1,249 @@
+ideas = {
+	country = {
+		
+		LBV_alone = {
+			picture = GFX_idea_LBV_alone
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			rule = {
+				can_join_factions = no 
+			}
+		}
+		LBV_too_much_br ={
+			picture = chi_army_corruption
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = -0.2
+				army_org_factor = -0.08
+				army_speed_factor = -0.1
+				training_time_factor = 0.25
+				air_accidents_factor = 0.15
+			}
+		}
+		LBV_too_much_br_1 ={
+			picture = chi_army_corruption2
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = -0.1
+				army_org_factor = -0.04
+				army_speed_factor = -0.05
+				air_accidents_factor = 0.15
+			}
+		}
+		LBV_too_much_br_2 ={
+			picture = chi_army_corruption2
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = -0.2
+				army_org_factor = -0.08
+				army_speed_factor = -0.1
+				training_time_factor = 0.25
+			}
+		}
+		LBV_too_much_br_3 ={
+			picture = chi_army_corruption3
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = -0.1
+				army_org_factor = -0.04
+				army_speed_factor = -0.05
+			}
+		}
+		LBV_not_ready = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+				targeted_modifier = {
+					tag = EGY
+					generate_wargoal_tension_against = 0.75
+				}
+				targeted_modifier = {
+					tag = RCG
+					generate_wargoal_tension_against = 0.75
+				}
+				targeted_modifier = {
+					tag = VOL
+					generate_wargoal_tension_against = 0.75
+				}
+		}
+		LBV_not_effective = {
+			picture = gre_schachtplan
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription_factor = -0.45
+			}
+		}
+		LBV_doubt = {
+			picture = GFX_idea_LBV_doubt
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = -0.15	
+			}
+		}
+		LBV_popular_front_1 = {
+			picture = GFX_idea_LBV_popular_front_1
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor	= -0.15	
+				neutrality_drift = 0.01
+			}
+		}
+		LBV_popular_front_2 = {
+			picture = GFX_idea_LBV_popular_front_2
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				war_support_factor = 0.1
+				neutrality_drift = 0.01
+			}
+		}
+		LBV_steal = {
+			picture = tur_balkan_central_bank_wealthy_greece
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.50
+			}
+		}
+		LBV_giving = {
+			picture = GFX_idea_LBV_giving
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = 0.10
+			}
+		}
+		LBV_great_offensive = {
+			picture = GFX_idea_LBV_great_offensive
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_org_regain = 0.1
+				army_core_attack_factor = 0.25
+			}
+		}
+		LBV_defence = {
+			picture = GFX_idea_LBV_defence
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				army_attack_factor = -0.2
+				army_core_defence_factor = 0.4
+			}
+		}
+		LBV_ministry_of_defence = {
+			picture = GFX_idea_LBV_ministry_of_defence
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				command_power_gain_mult = 0.1
+			}
+		}
+		LBV_no_surrender = {
+			picture = GFX_idea_LBV_no_surrender
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				surrender_limit = 1
+			}
+		}
+		LBV_inforced_work = {
+			picture = generic_exploit_mines
+			allowed = {
+				always = no
+				original_tag = LBV
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				consumer_goods_factor = -0.25
+			}
+		}

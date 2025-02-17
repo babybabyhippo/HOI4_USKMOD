@@ -1,0 +1,31 @@
+units = {
+	fleet = {
+		name = "mir"
+		naval_base = 4196
+		task_force = {
+			name = "Di 1 Jiandui"
+			location = 11805 #Shanghai
+			ship = { name = "Mir's first ship" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ARG version_name = "Rivadavia Class" } } }
+			ship = { name = "Mir's second ship" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = ARG version_name = "Rivadavia Class" } } }
+			ship = { name = "Mir's pack jung bin" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ARG version_name = "Veinticinco de Mayo Class" } } }
+			ship = { name = "Mir's lee june noid" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ARG version_name = "Veinticinco de Mayo Class" } } }
+			ship = { name = "Mir's Pueyrredon" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ARG version_name = "Garibaldi Class" } } }
+			ship = { name = "Mir's Libertad" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ARG version_name = "Libertad Class" } } }
+			ship = { name = "Mir's Independencia" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = ARG version_name = "Libertad Class" } } }
+			# Flotilla de Destructores nro. 1
+			ship = { name = "Mir's Catamarca" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ARG version_name = "Catamarca Class" } } }
+			ship = { name = "Mir's Jujuy" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ARG version_name = "Catamarca Class" } } }
+			ship = { name = "Mir's Córdoba" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ARG version_name = "Catamarca Class" } } }
+			ship = { name = "Mir's La Plata" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ARG version_name = "Catamarca Class" } } }
+			# Flotilla de Destructores nro. 2
+			ship = { name = "Mir's Cervantes" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ARG version_name = "Cervantes Class" } } }
+			ship = { name = "Mir's Juan de Garay" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ARG version_name = "Cervantes Class" } } }
+			ship = { name = "Mir's Mendoza" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ARG version_name = "Mendoza Class" } } }
+			ship = { name = "Mir's La Rioja" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ARG version_name = "Mendoza Class" } } }
+			ship = { name = "Mir's Tucumán" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ARG version_name = "Mendoza Class" } } }
+			ship = { name = "Mir's Santa Fe" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ARG version_name = "Santa Fe Class" } } }
+			ship = { name = "Mir's Santiago del Estero" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ARG version_name = "Santa Fe Class" } } }
+			ship = { name = "Mir's Salta" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = ARG version_name = "Santa Fe Class" } } }
+		}
+	}
+}

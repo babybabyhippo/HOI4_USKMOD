@@ -1,0 +1,126 @@
+ideas = {
+	country = {
+		EGY_alone = {
+			picture = GFX_idea_EGY_alone
+			allowed = {
+				always = no
+				original_tag = EGY
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			rule = {
+				can_join_factions = no 
+			}
+		}
+		EGY_not_ready = {
+			picture = HUN_treaty_of_triannon
+			allowed = {
+				always = no
+				original_tag = EGY
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+				targeted_modifier = {
+				tag = LBV
+				generate_wargoal_tension_against = 0.75
+			}
+		}
+		EGY_avoidance_military = {
+			picture = GFX_idea_EGY_avoidance_military
+			allowed = {
+				always = no
+				original_tag = EGY
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				conscription = -0.005
+				conscription_factor = -0.35
+				war_support_factor = -0.15
+			}
+		}
+		EGY_army_1 = {
+			picture = GFX_idea_EGY_army_1
+			allowed = {
+				always = no
+				original_tag = EGY
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				max_planning = 0.25
+				planning_speed = -0.25
+				land_doctrine_cost_factor = 0.1
+				army_speed_factor = -0.1
+				org_loss_when_moving = 0.15
+			}
+		}
+		EGY_air_1 = {
+			picture = GFX_idea_EGY_air_1
+			allowed = {
+				always = no
+				original_tag = EGY
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_accidents_factor = 0.25
+				air_range_factor = -0.1
+			}
+		}
+		EGY_navy_1 = {
+			picture = GFX_idea_EGY_navy_1
+			allowed = {
+				always = no
+				original_tag = EGY
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				navy_capital_ship_attack_factor = 0.1
+				navy_anti_air_attack_factor = 0.05
+				navy_spirit_category_type_cost_factor = -0.1
+			}
+		}
+		EGY_mir_paranoia = {
+			picture = GFX_idea_EGY_mir_paranoia
+			allowed = {
+				always = no
+				original_tag = EGY
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.4
+				political_power_factor	= -0.2
+				political_advisor_cost_factor = 0.15
+				high_command_cost_factor = 0.15
+				air_chief_cost_factor = 0.15
+				army_chief_cost_factor = 0.15
+				navy_chief_cost_factor = 0.15
+			}
+		}
+		EGY_lost_economy = {
+			picture = GFX_EGY_lost_economy
+			allowed = {
+				always = no
+				original_tag = EGY
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+	}
+}

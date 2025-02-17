@@ -1,0 +1,290 @@
+division_template = {
+	name = "혁명부대" #9600
+
+	division_names_group = GER_Inf_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+        infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+        infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "돌파부대" 			# 11900
+
+	division_names_group = GER_MOT_02
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		
+		motorized = { x = 2 y = 0 }
+	    motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+        mot_recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "유격대"		# 6000
+	#Note: precursor to Gebirgs-Divisions
+	division_names_group = GER_Mnt_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+	    mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "정찰부대"	#4800
+
+	division_names_group = GER_Cav_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+        cavalry = { x = 0 y = 1 }
+        cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	support = {
+	    recon = { x = 0 y = 0 }
+	    artillery = { x = 0 y = 1 }
+	}
+}
+
+units = {
+	division = {
+		name = "남진"
+		location = 9843
+		division_template = "돌파부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "돌격"
+		location = 9843
+		division_template = "돌파부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "돌파"
+		location = 9843
+		division_template = "돌파부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+
+
+
+	division = {
+		name = "단결"
+		location = 8049
+		division_template = "유격대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "결사"
+		location = 8049
+		division_template = "유격대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+		division = {
+		name = "사수"
+		location = 8049
+		division_template = "유격대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "유령"
+		location = 8049
+		division_template = "유격대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "은신"
+		location = 8049
+		division_template = "유격대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	
+	
+	
+	division = {
+		name = "신속"
+		location = 10433
+		division_template = "정찰부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "정확"
+		location = 7222
+		division_template = "정찰부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "교란"
+		location = 10880
+		division_template = "정찰부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	
+	
+	
+	division = {
+		name = "해방"
+		location = 9953
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 4547
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 4519
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 7459
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 7568
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 10446
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 	12426
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 4158
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 1603
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 7035
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 1083
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 12061
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 11994
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 1146
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 4148
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 4001
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 10095
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "해방"
+		location = 4203
+		division_template = "혁명부대"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+	}

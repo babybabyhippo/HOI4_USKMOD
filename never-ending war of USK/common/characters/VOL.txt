@@ -1,0 +1,124 @@
+characters={
+
+	VOL_pjb={
+		name=VOL_pjb
+		portraits={
+			army={
+				large="gfx/leaders/VOL/portrait_VOL_pjb.dds"
+				small="gfx/interface/ideas/VOL/idea_VOL_pjb.dds"
+			}
+		}
+		country_leader={
+			ideology=gen_nazism
+			traits={ traitor_the_revolution }
+			expire = "1965.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = pjb
+			allowed = {
+				original_tag = VOL
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				the_second_of_empire
+			}
+		}
+		field_marshal={
+			traits={ career_officer trait_cautious }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+	VOL_ljh={
+		name=VOL_ljh
+		portraits={
+			army={
+				large="gfx/leaders/VOL/portrait_VOL_ljh.dds"
+				small="gfx/interface/ideas/VOL/idea_VOL_ljh.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = ljh
+			allowed = {
+				original_tag = VOL
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+		}
+		corps_commander={
+				traits={ politically_connected }
+				skill=3
+				attack_skill=5
+				defense_skill=3
+				planning_skill=1
+				logistics_skill=3
+				legacy_id=0
+		}
+	}
+	VOL_kjh={
+		name=VOL_kjh
+		portraits={
+			army={
+				large="gfx/leaders/VOL/portrait_VOL_kjh.dds"
+				small="gfx/interface/ideas/VOL/idea_VOL_kjh.dds"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = kjh
+			allowed = {
+				original_tag = VOL
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				army_infantry_2
+			}
+		}
+		corps_commander={
+				traits={ politically_connected }
+				skill=3
+				attack_skill=5
+				defense_skill=3
+				planning_skill=1
+				logistics_skill=3
+				legacy_id=0
+		}
+	}
+	VOL_kjg={
+		name=VOL_kjg
+		portraits={
+			army={
+				large="gfx/leaders/VOL/portrait_VOL_kjg.dds"
+				small="gfx/interface/ideas/VOL/idea_VOL_kjg.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = kjg
+			allowed = {
+				original_tag = VOL
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				war_industrialist
+			}
+		}
+	}
+}

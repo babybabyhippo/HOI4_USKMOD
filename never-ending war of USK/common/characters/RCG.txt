@@ -1,0 +1,96 @@
+characters={
+
+	RCG_yjh={
+		name=RCG_yjh
+		portraits={
+			army={
+				large="gfx/leaders/RCG/portrait_RCG_yjh.dds"
+				small="gfx/interface/ideas/RCG/idea_RCG_yjh.dds"
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ fringe_fox }
+			expire = "1965.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = yjh
+			cost = 250
+			allowed = {
+				original_tag = RCG
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				economic_expert
+			}
+		}
+		field_marshal={
+			traits={ army_chief_old_guard }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+	RCG_nit={
+		name=RCG_nit
+		portraits={
+			army={
+				large="gfx/leaders/RCG/portrait_RCG_nit.dds"
+				small="gfx/interface/ideas/RCG/idea_RCG_nit.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = nit
+			cost = 150
+			allowed = {
+				original_tag = RCG
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				captain_of_industry
+			}
+		}
+	}
+	RCG_kjh={
+		name=RCG_kjh
+		portraits={
+			army={
+				large="gfx/leaders/RCG/portrait_RCG_kjh.dds"
+				small="gfx/interface/ideas/RCG/idea_RCG_kjh.dds"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = kjh
+			cost = 200
+			allowed = {
+				original_tag = RCG
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				army_chief_defensive_3
+			}
+		}
+		corps_commander={
+			traits={ career_officer engineer_officer }
+			skill=4
+			attack_skill=5
+			defense_skill=5
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+}

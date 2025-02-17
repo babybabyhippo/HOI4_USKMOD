@@ -1,0 +1,307 @@
+characters={
+
+	EGY_gmj={
+		name=EGY_gmj
+		portraits={
+			army={
+				large="gfx/leaders/EGY/portrait_EGY_gmj.dds"
+				small="gfx/interface/ideas/EGY/idea_EGY_gmj.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ lonely_aristocrat }
+			expire = "1965.1.1"
+			id=-1
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = gmj
+			allowed = {
+				original_tag = EGY
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				old_lion
+			}
+		}
+		field_marshal={
+			traits={ war_hero infantry_officer army_chief_old_guard expert_delegator }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+	EGY_she={
+		name=EGY_she
+		portraits={
+			army={
+				large="gfx/leaders/EGY/portrait_EGY_she.dds"
+				small="gfx/interface/ideas/EGY/idea_EGY_she.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = she
+			allowed = {
+				original_tag = EGY
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				landowner
+			}
+		}
+	}
+	EGY_yjh={
+		name=EGY_yjh
+		portraits={
+			army={
+				large="gfx/leaders/EGY/portrait_EGY_yjh.dds"
+				small="gfx/interface/ideas/EGY/idea_EGY_yjh.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = yjh
+			allowed = {
+				original_tag = EGY
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				economy_reformer
+			}
+		}
+	}
+	EGY_ljh={
+		name=EGY_ljh
+		portraits={
+			army={
+				large="gfx/leaders/EGY/portrait_EGY_ljh.dds"
+				small="gfx/interface/ideas/EGY/idea_EGY_ljh.dds"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = ljh
+			allowed = {
+				original_tag = EGY
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
+			traits = {
+				fascist_demagogue propaganda_expert 
+			}
+			cost = 200
+		}
+		corps_commander={
+				traits={ trait_reckless armor_officer }
+				skill=4
+				attack_skill=5
+				defense_skill=3
+				planning_skill=5
+				logistics_skill=3
+				legacy_id=0
+		}
+	}
+	EGY_pjb={
+		name=EGY_pjb
+		portraits={
+			army={
+				large="gfx/leaders/EGY/portrait_EGY_pjb.dds"
+				small="gfx/interface/ideas/EGY/idea_EGY_pjb.dds"
+			}
+		}
+			advisor = {	
+			slot = air_chief
+			idea_token = pjb
+			allowed = {
+				original_tag = EGY
+			}
+			traits = {
+				air_chief_ground_support_2
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+				traits={ career_officer trait_cautious }
+				skill=3
+				attack_skill=3
+				defense_skill=4
+				planning_skill=3
+				logistics_skill=3
+				legacy_id=0
+		}
+	}
+	EGY_psy={
+		name=EGY_psy
+		portraits={
+			army={
+				large="gfx/leaders/EGY/portrait_EGY_psy.dds"
+				small="gfx/interface/ideas/EGY/idea_EGY_psy.dds"
+			}
+		}
+			advisor = {	
+			slot = high_command
+			idea_token = psy
+			allowed = {
+				original_tag = EGY
+			}
+			traits = {
+				army_commando_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+				traits={ trait_reckless commando }
+				skill=4
+				attack_skill=4
+				defense_skill=5
+				planning_skill=3
+				logistics_skill=4
+				legacy_id=0
+		}
+	}
+	EGY_njy={
+		name=EGY_njy
+		portraits={
+			army={
+				large="gfx/leaders/EGY/portrait_EGY_njy.dds"
+				small="gfx/interface/ideas/EGY/idea_EGY_njy.dds"
+			}
+		}
+			advisor = {	
+			slot = army_chief
+			idea_token = njy
+			allowed = {
+				original_tag = EGY
+			}
+			traits = {
+				army_chief_offensive_3
+			}
+			cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+				traits={ trait_reckless offensive_doctrine }
+				skill=6
+				attack_skill=6
+				defense_skill=7
+				planning_skill=6
+				logistics_skill=6
+				legacy_id=0
+		}
+	}
+	EGY_hng={
+		name=EGY_hng
+		portraits={
+			army={
+				large="gfx/leaders/EGY/portrait_EGY_hng.dds"
+				small="gfx/interface/ideas/EGY/idea_EGY_hng.dds"
+			}
+		}
+			advisor = {	
+			slot = high_command
+			idea_token = hng
+			allowed = {
+				original_tag = EGY
+			}
+			traits = {
+				army_regrouping_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+				traits={ cavalry_officer }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				planning_skill=2
+				logistics_skill=1
+				legacy_id=0
+		}
+	}
+	EGY_osh={
+		name=EGY_osh
+		portraits={
+			army={
+				large="gfx/leaders/EGY/portrait_EGY_osh.dds"
+				small="gfx/interface/ideas/EGY/idea_EGY_osh.dds"
+			}
+		}
+			advisor = {	
+			slot = high_command
+			idea_token = osh
+			allowed = {
+				original_tag = EGY
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 50
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		corps_commander={
+				traits={ politically_connected }
+				skill=2
+				attack_skill=2
+				defense_skill=1
+				planning_skill=2
+				logistics_skill=2
+				legacy_id=0
+		}
+	}
+	EGY_syu={
+		name=EGY_syu
+		portraits={
+			army={
+				large="gfx/leaders/EGY/portrait_EGY_syu.dds"
+				small="gfx/interface/ideas/EGY/idea_EGY_syu.dds"
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = syu
+			allowed = {
+				original_tag = EGY
+			}
+			traits = {
+				navy_chief_reform_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		navy_leader={		
+			traits={ bold navy_career_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=5
+			legacy_id=-1	
+		}	
+	}

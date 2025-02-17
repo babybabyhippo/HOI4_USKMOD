@@ -1,0 +1,41 @@
+﻿capital = 772
+
+oob = "RCG_1936"
+set_naval_oob = "RCG_1936_naval"
+set_air_oob = "RCG_1936_air"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_stability = 0.3
+set_war_support = 0.1
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	democratic = 15
+	fascism = 25
+	neutrality = 60
+}
+
+set_country_leader = {
+	character = RCG_yjh
+}
+
+set_party_name = { ideology =  neutrality long_name = RCG_neutrality_party_long name = RCG_neutrality_party }
+set_party_name = { ideology =  communism long_name = RCG_communism_party_long name = RCG_communism_party }
+set_party_name = { ideology =  fascism long_name = RCG_fascism_party_long name = RCG_fascism_party }
+set_party_name = { ideology =  democratic long_name = RCG_democratic_party_long name = RCG_democratic_party }
+
+set_cosmetic_tag = RCG_EGY
+
+recruit_character = RCG_yjh
+recruit_character = RCG_nit
+recruit_character = RCG_kjh

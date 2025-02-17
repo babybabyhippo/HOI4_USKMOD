@@ -1,0 +1,10 @@
+air_wings = {
+	608 = {		
+		small_plane_airframe_1 =  {	
+			owner = "LBV" 
+			amount = 300
+			creator = "LBV"
+			version_name = "Bf 109 D"
+			}
+	}
+}

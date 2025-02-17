@@ -1,0 +1,56 @@
+division_template = {
+	name = "보병" 			# 4000
+	division_names_group = CHI_INF_01
+	regiments = {					.
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "보병"
+		location = 5033
+		division_template = "보병"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "보병"
+		location = 5033
+		division_template = "보병"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "보병"
+		location = 5033
+		division_template = "보병"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "보병"
+		location = 5033
+		division_template = "보병"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "보병"
+		location = 5033
+		division_template = "보병"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "보병"
+		location = 5033
+		division_template = "보병"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+}

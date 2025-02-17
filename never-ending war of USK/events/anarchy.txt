@@ -1,0 +1,181 @@
+add_namespace = LBV
+
+# 폭풍 전야
+country_event = {
+	id = LBV.1
+	title = LBV.1.t
+	desc = LBV.1.d
+	picture = GFX_report_event_LBV_1
+
+	fire_only_once = yes
+	
+	timeout_days = 21
+
+	trigger = {
+		original_tag = LBV
+	}
+
+	mean_time_to_happen = {
+		day = 1
+	}
+
+	option = {
+		name = LBV.1.a
+	}
+}
+
+# 대 미르 전쟁
+country_event = {
+	id = LBV.2
+	title = LBV.2.t
+	desc = LBV.2.d
+	picture = GFX_report_event_LBV_2
+	
+	is_triggered_only = yes
+	
+	timeout_days = 21
+
+	option = {
+		name = LBV.2.a
+	}
+}
+
+# 비밀기지 확보
+country_event = {
+	id = LBV.3
+	title = LBV.3.t
+	desc = LBV.3.d
+	picture = GFX_report_event_LBV_3
+	
+	is_triggered_only = yes
+	
+	timeout_days = 21
+
+	option = {
+		name = LBV.3.a
+		transfer_state = 524
+		add_ideas = LBV_no_surrender
+		add_ideas = scraping_the_barrel
+		add_ideas = tot_economic_mobilisation
+		hidden_effect = {
+			EGY = {
+				country_event = { id = EGY.3 days = 1 }
+			}
+		}
+		 set_capital = {
+				state = 524
+				remember_old_capital = yes
+		}
+		set_province_name = { id = 7186 name = "newanarchy" }
+		set_province_name = { id = 12068 name = "newportanarchy" }
+	}
+	option = {
+		name = LBV.3.a_2
+		transfer_state = 524
+		add_ideas = LBV_no_surrender
+		hidden_effect = {
+			EGY = {
+				country_event = { id = EGY.3 days = 1 }
+			}
+		}
+		 set_capital = {
+				state = 524
+				remember_old_capital = yes
+		}
+		set_province_name = { id = 7186 name = "newanarchy" }
+		set_province_name = { id = 12068 name = "newportanarchy" }
+	}
+}
+
+#심강현 독재정#
+country_event = {
+	id = LBV.4
+	title = LBV.4.t
+	desc = LBV.4.d
+	picture = GFX_report_event_LBV_4
+	
+	is_triggered_only = yes
+	
+	timeout_days = 21
+
+	option = {
+		name = LBV.4.a
+		remove_ideas = LBV_popular_front_1
+		add_war_support = 0.2
+		add_stability = -0.1
+		hidden_effect = {
+			set_cosmetic_tag = LBV_dictator
+			set_politics = {
+				ruling_party = fascism
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				democratic = 20
+				fascism = 40
+				communism =  1
+				neutrality = 39
+			}
+			create_country_leader = {
+				name = "LBV_skh2"
+				picture = "gfx/leaders/LBV/portrait_LBV_skh.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+					unstable_dictator
+				}
+			}
+		}
+	}
+}
+
+#이서진 숙청#
+country_event = {
+	id = LBV.5
+	title = LBV.5.t
+	desc = LBV.5.d
+	picture = GFX_report_event_LBV_5
+	
+	is_triggered_only = yes
+	
+	timeout_days = 21
+
+	option = {
+		name = LBV.5.a
+		LBV_lsj = {
+			remove_unit_leader_role = yes
+			remove_advisor_role = {
+				slot = political_advisor
+			}	
+		}
+		add_popularity = { 
+			ideology = fascism
+			popularity = 0.1
+		}
+		add_war_support = 0.2
+		add_stability = -0.1
+		hidden_effect = {
+		
+				}
+			}
+	option = {
+		name = LBV.5.a_2
+		LBV_lsj = {
+			remove_unit_leader_role = yes
+			remove_advisor_role = {
+				slot = political_advisor
+			}	
+		}
+		add_popularity = { 
+			ideology = fascism
+			popularity = 0.07
+		}
+		add_war_support = 0.1
+		hidden_effect = {
+		
+				}
+			}
+		}
+	}
+}

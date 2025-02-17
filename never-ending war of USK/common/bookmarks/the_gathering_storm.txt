@@ -1,0 +1,59 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "LBV"
+		default = yes
+		
+		"LBV"={
+			history = "LBV_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				LBV_no_surrender
+				
+				
+			}
+			focuses = {
+				LBV_skh_party
+				LBV_lsj_party
+				
+				
+			}
+		}
+		"EGY"={
+			history = "EGY_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"VOL"={
+			history = "VOL_GATHERING_STORM_DESC"
+			ideology = fascism
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"RCG"={
+			history = "RCG_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
