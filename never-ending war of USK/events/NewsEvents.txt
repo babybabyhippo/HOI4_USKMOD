@@ -13411,7 +13411,6 @@ news_event = {
 		day = 1
 	}
 	trigger = {
-		613 = { is_owned_by = LBV }
 	}
 	
 	option = {
