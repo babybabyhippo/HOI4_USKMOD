@@ -104,6 +104,9 @@ country_event = {
 		add_war_support = 0.2
 		add_stability = -0.1
 		hidden_effect = {
+			EGY = {
+				country_event = { id = EGY.4 days = 1 }
+			}
 			set_cosmetic_tag = LBV_dictator
 			set_politics = {
 				ruling_party = fascism
@@ -156,7 +159,7 @@ country_event = {
 		add_war_support = 0.2
 		add_stability = -0.1
 		hidden_effect = {
-		
+			news_event = { hours = 6 id = news.502 }
 				}
 			}
 	option = {
@@ -174,8 +177,6 @@ country_event = {
 		add_war_support = 0.1
 		hidden_effect = {
 		
-				}
-			}
 		}
 	}
 }

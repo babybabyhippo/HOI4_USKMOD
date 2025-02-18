@@ -23,7 +23,7 @@ country_event = {
 		name = EGY.1.a
 	}
 }
-
+#대조국전쟁#
 country_event = {
 	id = EGY.2
 	title = EGY.2.t
@@ -38,7 +38,7 @@ country_event = {
 		name = EGY.2.a
 	}
 }
-
+#강탈당한 다산지구#
 country_event = {
 	id = EGY.3
 	title = EGY.3.t
@@ -51,5 +51,21 @@ country_event = {
 
 	option = {
 		name = EGY.3.a
+	}
+}
+#심강현의 독재#
+country_event = {
+	id = EGY.4
+	title = EGY.4.t
+	desc = EGY.4.d
+	picture = GFX_report_event_LBV_4
+
+	is_triggered_only = yes
+	
+	timeout_days = 21
+
+	option = {
+		name = EGY.4.a
+		add_stability = 0.1
 	}
 }

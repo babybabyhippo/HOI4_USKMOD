@@ -84,14 +84,13 @@ add_ideas = {
 	LBV_popular_front_1
 }
 
-set_party_name = { ideology =  neutrality long_name = LBV_anarchist_party_long name = LBV_anarchist_party }
+set_party_name = { ideology =  anarchism long_name = LBV_anarchist_party_long name = LBV_anarchist_party }
 set_party_name = { ideology =  communism long_name = LBV_communism_party_long name = LBV_communism_party }
 set_party_name = { ideology =  fascism long_name = LBV_fascism_party_long name = LBV_fascism_party }
 set_party_name = { ideology =  democratic long_name = LBV_democratic_party_long name = LBV_democratic_party }
 
 set_politics = {
-	ruling_party =  neutrality
-	ideology = anarchism
+	ruling_party = neutrality
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no

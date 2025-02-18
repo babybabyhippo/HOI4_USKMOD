@@ -13318,7 +13318,7 @@ news_event = {
 	timeout_days = 21
 
 	trigger = {
-		original_tag = LBV
+	
 	}
 
 	mean_time_to_happen = {
@@ -13358,18 +13358,20 @@ news_event = {
 		}
 	}
 }
+#1기지대화재#
 news_event = {
 	id = news.500
 	title = news.500.t
-	desc = new.500.d
+	desc = news.500.d
 	picture = GFX_news_usk_event_001
 	
 	major = yes
-	timeout_days = 21
+	
+	
 	fire_only_once = yes
 	
 	trigger = {
-		country_exists = LBV
+		country_exists = USA
 	}
 
 	mean_time_to_happen = {
@@ -13398,19 +13400,29 @@ news_event = {
 		trigger = { TAG = LBV }
 	}
 }
+#1기지 점령#
 news_event = {
 	id = news.501
 	title = news.501.t
-	desc = new.501.d
-	picture = GFX_news_usk_event_001
+	desc = news.501.d
+	picture = GFX_news_usk_event_002
+	
+	fire_only_once = yes
 	
 	major = yes
-	timeout_days = 21
-	fire_only_once = yes
+	
 	mean_time_to_happen = {
-		day = 1
+		day = 2
 	}
 	trigger = {
+		361 = { is_controlled_by = LBV }
+		361 = { is_owned_by = EGY }
+		EGY = { has_war_with = LBV }
+		NOT = { has_global_flag = fall_of_first }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_first
 	}
 	
 	option = {
@@ -13435,7 +13447,45 @@ news_event = {
 		trigger = { TAG = LBV }
 	}
 }
+#이서진 사형#
+news_event = {
+	id = news.502
+	title = news.502.t
+	desc = news.502.d
+	picture = GFX_news_usk_event_003
+	
+	major = yes
+	
+	is_triggered_only = yes
 
+	mean_time_to_happen = {
+		day = 2
+	}
+	
+	
+	
+	option = {
+		name = news.502.a
+		trigger = {
+			NOT = {
+				TAG = EGY
+				TAG = VOL
+				TAG = RCG
+				TAG = LBV
+			}
+		}
+	}
+	option = {
+		name = news.502.b
+		trigger = { TAG = EGY }
+		trigger = { TAG = VOL }
+		trigger = { TAG = RCG }
+	}
+	option = {
+		name = news.502.c
+		trigger = { TAG = LBV }
+	}
+}
 
 
 
