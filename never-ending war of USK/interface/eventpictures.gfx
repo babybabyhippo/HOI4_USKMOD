@@ -3823,11 +3823,26 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_report_event_EGY_2"
-		texturefile = "gfx/event_pictures/report_event_LBV_2.dds"
+		texturefile = "gfx/event_pictures/report_event_EGY_2.dds"
 	}
 	spriteType = {
 		name = "GFX_report_event_EGY_3"
-		texturefile = "gfx/event_pictures/report_event_LBV_3.dds"
+		texturefile = "gfx/event_pictures/report_event_EGY_3.dds"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_news_usk_event_001"
+		texturefile = "gfx/event_pictures/news_usk_event_001.dds"
+	}
+	spriteType = {
+		name = "GFX_news_usk_event_002"
+		texturefile = "gfx/event_pictures/news_usk_event_002.dds"
+	}
+	spriteType = {
+		name = "GFX_news_usk_event_003"
+		texturefile = "gfx/event_pictures/news_usk_event_003.dds"
 	}
 }
 

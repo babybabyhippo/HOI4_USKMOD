@@ -1,0 +1,16 @@
+state={
+	id=982
+	name="STATE_982"
+	provinces={
+		8018 7940
+	}
+	history = {
+		owner = VOL
+		add_core_of = VOL
+		add_core_of = EGY
+		add_core_of = LBV
+	}
+	manpower=280000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

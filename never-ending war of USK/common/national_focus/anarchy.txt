@@ -47,7 +47,7 @@ focus_tree = {
 	focus = {
 		id = LBV_popular_front_political_power
 		icon = GFX_goal_generic_national_unity
-		x = 4
+		x = 3
 		y = 1
 		Relative_position_id = LBV_skh_party
 		prerequisite = { focus = LBV_skh_party }
@@ -414,7 +414,60 @@ focus_tree = {
 			country_event = { id = LBV.3 days = 1 }
 		}
 	}
-	
+	focus = {
+		id = LBV_economic_plan
+		icon = GFX_focus_generic_military_industry
+		x = 3
+		y = 3
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_give_money }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = LBV_new_economic_plan days = 730 }
+		}
+	}
+	focus = {
+		id = LBV_examine
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 2
+		y = 4
+		Relative_position_id = LBV_popular_front_political_power
+		prerequisite = { focus = LBV_give_money }
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = LBV_new_economic_plan days = 730 }
+		}
+	}
 	
 	
 	
@@ -431,7 +484,7 @@ focus_tree = {
 	focus = {
 		id = LBV_be_dictator
 		icon = GFX_goal_support_fascism
-		x = -4
+		x = -3
 		y = 1
 		Relative_position_id = LBV_skh_party
 		prerequisite = { focus = LBV_skh_party }
@@ -576,9 +629,187 @@ focus_tree = {
 			
 		}
 	}
-	
-	
-	
+	focus = {
+		id = LBV_military_factory
+		icon = GFX_focus_generic_reorient_production
+		x = 2
+		y = 3
+		Relative_position_id = LBV_be_dictator
+		prerequisite = { focus = LBV_inforce }
+		
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			608 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = -5
+					instant_build = yes
+				}
+			}
+			608 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = LBV_total_war
+		icon = GFX_focus_generic_total_war
+		x = -1
+		y = 4
+		Relative_position_id = LBV_be_dictator
+		prerequisite = { focus = LBV_to_the_Unification }
+		
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = tot_economic_mobilisation
+				unlock_decision_tooltip = {
+					decision = women_in_the_workforce
+				} 
+				activate_decision = women_in_the_workforce
+			
+		}
+	}
+
+	focus = {
+		id = LBV_to_the_Unification
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 0
+		y = 3
+		Relative_position_id = LBV_be_dictator
+		prerequisite = { focus = LBV_propaganda }
+		prerequisite = { focus = LBV_inforce }
+		
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			declare_war_on = {
+				target = EGY
+				type = take_state_focus
+			}
+			declare_war_on = {
+				target = VOL
+				type = take_state_focus
+			}
+			declare_war_on = {
+				target = RCG
+				type = take_state_focus
+			}
+			hidden_effect = {
+				country_event = { id = LBV.2 days = 1 }
+				EGY = { 
+					country_event = { id = EGY.2 days = 1 }
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = LBV_many_weapons
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 1
+		y = 4
+		Relative_position_id = LBV_be_dictator
+		prerequisite = { focus = LBV_to_the_Unification }
+		
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			surrender_progress > 0.3
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = LBV_many_weapons
+			
+		}
+	}
+	focus = {
+		id = LBV_effective
+		icon = GFX_goal_generic_forceful_treaty
+		x = -2
+		y = 3
+		Relative_position_id = LBV_be_dictator
+		prerequisite = { focus = LBV_propaganda }
+		
+
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = LBV_not_effective
+			
+		}
+	}
 	
 	
 	

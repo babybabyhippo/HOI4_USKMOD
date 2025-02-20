@@ -2695,7 +2695,11 @@
  LBV_no_surrender_desc: "아직 포기할수 없다. 항복할바엔 죽으리라."
  LBV_inforced_work: "강제 노동"
  LBV_inforced_work_desc: "국민들을 강제로 동원하여 건설을 늘립니다."
- 
+ LBV_new_economic_plan: "경제 개발 2개년 계획"
+ LBV_new_economic_plan_desc: "저들에게 뒤쳐져서는 안된다."
+ LBV_many_weapons: "보병장비 대량생산"
+ LBV_many_weapons_desc: "우리의 열세를 극복하기 위해 보병장비를 대량으로 생산합니다."
+
  EGY_alone: "우리 스스로"
  EGY_alone_desc: "우리가 이 전쟁을 시작했고 우리가 끝내야만 합니다."
  EGY_not_ready: "폭풍전야"

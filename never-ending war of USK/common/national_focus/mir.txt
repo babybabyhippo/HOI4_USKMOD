@@ -13,4 +13,80 @@ focus_tree = {
 	
 	continuous_focus_position = { x = 50 y = 1350 }
 
-	#
+	#구민준파#
+
+	focus = {
+		id = EGY_gmj_party
+		icon = GFX_focus_CONGO_ccci
+		x = 1
+		y = 0
+
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 25
+		}
+	}
+
+
+	#미르의 편집증 관리(대숙청하여 숙청규모에 따라 디버프 감소)
+
+
+
+
+	#대미르제국#
+	focus = {
+		id = EGY_great_mir_empire
+		icon = GFX_focus_generic_fascist_propaganda
+		x = 3
+		y = 1
+		Relative_position_id = EGY_gmj_party
+		prerequisite = { focus = EGY_gmj_party }
+
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
